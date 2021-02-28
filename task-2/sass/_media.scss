@@ -1,0 +1,32 @@
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template: repeat(6, 15%) / repeat(2, 49%);
+    .image {
+      &:nth-child(2n + 1) {
+        border: 5px solid #ff0000;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    display: block;
+    .image {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:nth-child(2n + 1) {
+        border: 5px solid #a9a9a9;
+      }
+      &:hover {
+        border: 5px solid #a9a9a9;
+      }
+      img {
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+}

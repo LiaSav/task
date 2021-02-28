@@ -1,0 +1,56 @@
+@import "libs/bootstrap-reboot.min";
+
+.container {
+  width: 300px;
+  margin: 0 auto 20px auto;
+  .flag-ukraine {
+    margin-top: 20px;
+    height: 200px;
+    background: linear-gradient(#005bbb 50%, #ffd500 50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .flag-japan {
+    margin-top: 20px;
+    height: 200px;
+    background: radial-gradient(circle, #bc002d 58px, #fff 60px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    // т.к фон документа - белый и он сливается с цветом флага добавила свойство box-shadow ко всем флагам
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .flag-iceland {
+    margin-top: 20px;
+    height: 200px;
+    background: linear-gradient(#02529c, #02529c) 0 0 /78px 78px,
+      linear-gradient(#02529c, #02529c) 0 100% /78px 77px,
+      linear-gradient(#02529c, #02529c) 100% 0 /177px 78px,
+      linear-gradient(#02529c, #02529c) 100% 100%/177px 77px,
+      linear-gradient(#dc1e35, #dc1e35) 88px 0/ 25px 100%,
+      linear-gradient(#dc1e35, #dc1e35) 0 88px/ 100% 25px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .flag-czech {
+    margin-top: 20px;
+    height: 200px;
+    background: linear-gradient(#fff 50%, #d7141a 50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &__triangle {
+      width: 0;
+      height: 0;
+      border-top: 100px solid transparent;
+      border-left: 150px solid #11457e;
+      border-bottom: 100px solid transparent;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

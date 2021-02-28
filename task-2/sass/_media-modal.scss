@@ -1,0 +1,28 @@
+@media screen and (max-width: 900px) {
+  .modal {
+    &-window,
+    &-image {
+      width: 698px;
+      height: 490px;
+    }
+    &-close {
+      right: -45px;
+      font-size: 25px;
+      padding: 0px 10px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .modal {
+    &-window,
+    &-image {
+      width: 398px;
+      height: 290px;
+    }
+    &-close {
+      right: -33px;
+      font-size: 20px;
+      padding: 0px 5px;
+    }
+  }
+}

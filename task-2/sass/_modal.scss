@@ -1,0 +1,59 @@
+.modal {
+  &.open &-overlay,
+  &.open &-window {
+    opacity: 1;
+    z-index: 1;
+  }
+  &.hide &-overlay,
+  &.hide &-window {
+    opacity: 1;
+    z-index: 1;
+  }
+  &.open &-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &.hide &-overlay {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  &-window,
+  &-overlay {
+    opacity: 0;
+    z-index: -1;
+  }
+  &-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease-in;
+  }
+  &-window,
+  &-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 998px;
+    height: 690px;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
+  &-close {
+    position: absolute;
+    top: 0px;
+    right: -70px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 30px;
+    padding: 0px 20px;
+    z-index: 2;
+    &:hover,
+    &:focus,
+    &:active {
+      border: solid #fff;
+      outline: inherit;
+    }
+  }
+}
